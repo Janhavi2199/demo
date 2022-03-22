@@ -1,0 +1,134 @@
+.font-fam, body, .top_bar i span {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0px;
+  height: 3000px;
+}
+
+.top_bar {
+  background-color: #191919;
+  padding: 10px;
+  font-size: 15px;
+  padding-left: 100px;
+}
+
+.top_bar i {
+  color: #cc1616;
+  margin-left: 10px;
+}
+
+.top_bar i span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.top_bar i span:hover {
+  color: white;
+}
+
+.top_bar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.top_bar a:hover {
+  color: white;
+}
+
+.top_bar .icons {
+  float: right;
+  margin: 0px;
+  margin-right: 100px;
+}
+
+.top_bar .icons li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.top_bar .icons li i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px;
+}
+
+.top_bar .icons li i:hover {
+  color: white;
+}
+
+.logo_bar {
+  background-color: rgba(25, 25, 25, 0.95);
+  color: white;
+  height: 70px;
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.logo_bar span {
+  margin-left: 108px;
+  position: absolute;
+  top: 10px;
+}
+
+.logo_bar span a {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.logo_bar .nav-items {
+  float: right;
+  margin-right: 130px;
+  margin-top: 0px;
+  position: relative;
+}
+
+.logo_bar .nav-items a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo_bar .nav-items a :last-child {
+  display: none;
+}
+
+.logo_bar .nav-items a .home {
+  list-style-type: none;
+  display: inline-block;
+  height: 70px;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logo_bar .nav-items a .active_state {
+  background-color: #cc1616;
+}
+
+.logo_bar .nav-items a li:hover.home {
+  background-color: #cc1616;
+  color: blue;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  .icons {
+    display: none;
+  }
+  .logo_bar a {
+    margin-left: -96px;
+  }
+  .nav-items a {
+    display: none;
+  }
+  .nav-items a:last-child {
+    display: block;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,133 @@
+@import "./variables";
+
+.font-fam{
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    margin: 0px;
+    @extend .font-fam;
+    height: 3000px;
+}
+.top_bar{
+    background-color: $color-black;
+    padding: 10px;
+    font-size: 15px;
+    padding-left: 100px;
+    i{
+        color: $color-red;
+        margin-left: 10px;
+        span{
+            color: $color-grey;
+            @extend .font-fam;
+        }
+        span:hover{
+            color: $color-white;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $color-grey;
+    }
+    a:hover{
+        color: $color-white;
+    }
+    .icons{
+        float: right;
+        margin: 0px;
+        margin-right: 100px;
+        li{
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 15px;
+           i{
+               color: $color-grey;
+               font-size: 17px;
+           }
+           i:hover{
+               color: $color-white;
+           }
+        }
+    }
+}
+.logo_bar{
+    background-color: $color2;
+    color: $color-white;
+    height: 70px;
+    position: relative;
+    position: sticky;
+    top: 0px;
+    span{
+        margin-left: 108px;
+        position: absolute;
+        top: 10px;
+        a{
+            text-decoration: none;
+            color: $color-white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+    }
+    .nav-items{
+        float: right;
+        margin-right: 130px;
+        margin-top: 0px;
+        position: relative;
+        a{
+            text-decoration: none;
+            color: $color-white;
+            :last-child{
+                display: none;
+            }
+            .home{
+                list-style-type: none;
+                display: inline-block; 
+                height: 70px;
+                padding:0px 10px 0px 10px;
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .active_state{
+                background-color: #cc1616;
+            }
+            li:hover.home{
+                background-color:#cc1616;
+                color: blue;
+                transition: 0.4s;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:900px){
+    .icons{
+        display: none;
+    }
+    .logo_bar a{
+        margin-left: -96px;
+    }
+    .nav-items a{
+        display: none;
+    }
+    // .nav-items a.bar_icon{
+    //     display: block;
+    //     // position: absolute;
+    //     // top: 20px;
+    //     // left: 230px;
+    // }
+   .nav-items a:last-child{
+       display: block;
+   }
+//    .nav-items .bar_icon{
+//     position: absolute;
+//     top: 20px;
+//     left: 230px;
+//     font-size: 25px;
+//     display: block;
+//    }
+//    .nav-items li .home{
+//        display: none;
+//    }
+   
+}
